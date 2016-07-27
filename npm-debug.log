@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\WorkspaceSOFEA\\http-server-js',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\fabio.munhoz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle http-server-js@1.0.0~prepublish: http-server-js@1.0.0
+11 silly lifecycle http-server-js@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\fabio.munhoz\\AppData\\Roaming\\npm-cache\\http-server-js\\1.0.0\\package.tgz',
+12 verbose tar pack   'C:\\WorkspaceSOFEA\\http-server-js' ]
+13 verbose tarball C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package.tgz
+14 verbose folder C:\WorkspaceSOFEA\http-server-js
+15 verbose addLocalTarball adding from inside cache C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\fabio.munhoz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd http-server-js@1.0.0
+18 verbose afterAdd C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\fabio.munhoz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package\package.json written
+21 silly publish { name: 'http-server-js',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Simple http server using nodejs',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ftheomunhoz/http-server-js.git' },
+21 silly publish   keywords: [ 'nodejs', 'http-server' ],
+21 silly publish   author: { name: 'ftheomunhoz' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/ftheomunhoz/http-server-js/issues' },
+21 silly publish   homepage: 'https://github.com/ftheomunhoz/http-server-js#readme',
+21 silly publish   dependencies: { compression: '^1.6.2', express: '^4.14.0', path: '^0.12.7' },
+21 silly publish   readme: '# http-server-js',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '72841ee080e4dda312817a6e83a28d01aa5dfd6f',
+21 silly publish   _id: 'http-server-js@1.0.0',
+21 silly publish   _shasum: 'e74290c9248495a2def46993e6bf5e212c04a66f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name http-server-js
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'http-server-js',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'http-server-js',
+26 silly mapToRegistry   name: 'http-server-js',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/http-server-js
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\http-server-js\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/http-server-js
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:47:04
+33 verbose request using bearer token for auth
+34 verbose request id f857dd92bfc4a345
+35 http request PUT https://registry.npmjs.org/http-server-js
+36 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.viverebrasil proxy.viverebrasil:3128
+37 info attempt registry request try #2 at 16:47:14
+38 verbose request using bearer token for auth
+39 http request PUT https://registry.npmjs.org/http-server-js
+40 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.viverebrasil proxy.viverebrasil:3128
+41 info attempt registry request try #3 at 16:48:14
+42 verbose request using bearer token for auth
+43 http request PUT https://registry.npmjs.org/http-server-js
+44 verbose request invalidating C:\Users\fabio.munhoz\AppData\Roaming\npm-cache\registry.npmjs.org\http-server-js on PUT
+45 error publish Failed PUT undefined
+46 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.viverebrasil proxy.viverebrasil:3128
+46 verbose stack     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+46 verbose stack     at ClientRequest.g (events.js:286:16)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at ClientRequest.emit (events.js:188:7)
+46 verbose stack     at Socket.socketErrorListener (_http_client.js:308:9)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at Socket.emit (events.js:188:7)
+46 verbose stack     at connectErrorNT (net.js:1015:8)
+46 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+46 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+47 verbose cwd C:\WorkspaceSOFEA\http-server-js
+48 error Windows_NT 6.1.7601
+49 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error node v6.3.0
+51 error npm  v3.10.3
+52 error code ECONNRESET
+53 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.viverebrasil proxy.viverebrasil:3128
+54 error network This is most likely not a problem with npm itself
+54 error network and is related to network connectivity.
+54 error network In most cases you are behind a proxy or have bad network settings.
+54 error network
+54 error network If you are behind a proxy, please make sure that the
+54 error network 'proxy' config is set properly.  See: 'npm help config'
+55 verbose exit [ 1, true ]
